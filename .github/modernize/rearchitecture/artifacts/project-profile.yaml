@@ -1,0 +1,46 @@
+project:
+  scope_path: "C:\\Banking-Fraud-Detection"
+  loc: 3654
+  languages: [Java, JavaScript/JSX, Python]
+  git: false
+  structure:
+    backend: "Spring Boot Java application; source tree present"
+    frontend: "React/Vite application; source tree present"
+    ml-service: "Python FastAPI application and tests"
+  notes: "Existing three-part Sentinel banking fraud intelligence application. Scope is an end-to-end feature expansion while preserving the existing React/Vite, Spring Boot, and FastAPI stack. LOC is a source-root estimate from backend/src, frontend/src, and ml-service/app/tests."
+
+assessment:
+  change_type: upgrade
+  rationale: |
+    The request expands product functionality across the existing application while explicitly preserving its current technology stack; it is therefore an in-place, same-stack modernization rather than a cross-stack rewrite or service extraction.
+  transformations:
+    - fromStack: "React/Vite frontend"
+      toStack: "React/Vite frontend"
+    - fromStack: "Spring Boot Java backend"
+      toStack: "Spring Boot Java backend"
+    - fromStack: "Python FastAPI ML service"
+      toStack: "Python FastAPI ML service"
+    - fromStack: "Dataset ingestion without distributed processing"
+      toStack: "Apache Spark local-mode dataset processing"
+  grouping_needed: false
+  deep_planning: true
+
+progress_sync:
+  run_id: 6a6ea74a-7f91-4dcd-bf48-a9f9687bc09a
+  grouping_mode: none
+  execution_mode: undecided
+  plan_start_time: "2026-11-18T05:15:04Z"
+  plan_completed_time: null
+  execution_start_time: null
+  execution_completed_time: null
+  validation_start_time: null
+  validation_completed_time: null
+  total_phases: null
+  completed_phases: 0
+  total_modules: 3
+  completed_modules: 0
+  total_tasks: 5
+  completed_tasks: 0
+  total_commits: 0
+  build_verified: false
+  test_verified: false

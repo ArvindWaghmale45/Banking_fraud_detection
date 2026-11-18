@@ -1,0 +1,25 @@
+# Local environments and dependencies
+.venv/
+venv/
+node_modules/
+
+# Build outputs
+target/
+dist/
+build/
+
+# Python-generated files
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Local logs and editor state
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea/
